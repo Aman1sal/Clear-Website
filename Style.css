@@ -95,11 +95,20 @@
 }
 
 /* Navbar */
+.navbar-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--white);
+    position: fixed;
+    z-index: 4000;
+}
+
 .navbar {
     max-width: 1170px;
-    margin: auto;
+    min-width: 976px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 56px;
     align-items: center;
     color: #9092A3;
@@ -158,7 +167,7 @@
 
 /* Hero Section */
 .hero-section {
-    margin-top: 48px;
+    margin-top: 96px;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -174,7 +183,6 @@
 }
 
 .hero-content {
-    width: 50%;
     flex-grow: 2;
 }
 
@@ -230,7 +238,7 @@
 /* Solution Section */
 
 .solutions-section {
-    padding-top: 80px;
+    padding-top: 120px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -301,6 +309,7 @@
 }
 
 .gst-software-cards {
+    max-width: 1170px;
     display: flex;
     padding: 0px 16px;
     justify-content: center;
@@ -492,8 +501,9 @@
 .variety-image img {
     max-width: 500px;
 }
+
 /* Smart section */
-.smart{
+.smart {
     max-width: 1170px;
     margin-left: 24px;
     margin-right: 24px;
@@ -501,36 +511,44 @@
     display: flex;
     flex-direction: column;
     gap: 28px;
+    flex-wrap: wrap;
 }
-.smart-images{
+
+.smart-images {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
-.smart-image{
+
+.smart-image {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 24px;
+    max-width: 100%;
 }
-.smart-image-caption{
+
+.smart-image-caption {
     color: var(--para);
-text-align: center;
-font-family: Gilroy;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: 24px;
-text-transform: uppercase;
+    text-align: center;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
 }
+
 /* g1 - g9 section */
-.g1-g9-section{
+.g1-g9-section {
     margin-top: 128px;
     width: 100%;
     display: flex;
     justify-content: center;
 }
-.g1-g9{
+
+.g1-g9 {
     max-width: 1170px;
     margin-left: 24px;
     margin-right: 24px;
@@ -538,36 +556,43 @@ text-transform: uppercase;
     flex-direction: column;
     gap: 48px;
 }
-.g1-g9-written{
+
+.g1-g9-written {
     width: 50%;
     display: flex;
     flex-direction: column;
     gap: 28px;
 }
-.g1-g9-buttons{
+
+.g1-g9-buttons {
     display: flex;
     padding-top: 24px;
 }
-.g1-g9-primary{
+
+.g1-g9-primary {
     padding: 12px 24px;
     background-color: var(--blue);
     color: var(--white);
     text-decoration: none;
     border-radius: 8px;
 }
-.g1-g9-secondary{
+
+.g1-g9-secondary {
     padding: 12px 24px;
     color: var(--blue);
     text-decoration: none;
 }
-.g1-g9-images{
+
+.g1-g9-images {
     display: flex;
     padding: 24px;
     gap: 48px;
     flex-wrap: wrap;
     align-items: flex-start;
+    justify-content: center;
 }
-.g1-g9-card{
+
+.g1-g9-card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -577,14 +602,16 @@ text-transform: uppercase;
     height: 184px;
     border-radius: 12px;
 }
+
 /* Pull Gstr sections */
-.pull-gstr-section{
+.pull-gstr-section {
     margin-top: 176px;
     width: 100%;
     display: flex;
     justify-content: center;
 }
-.pull-gstr{
+
+.pull-gstr {
     max-width: 1170px;
     margin-right: 24px;
     margin-left: 24px;
@@ -592,39 +619,47 @@ text-transform: uppercase;
     align-items: center;
     justify-content: center;
 }
-.pull-gstr-content{
+
+.pull-gstr-content {
     display: flex;
     flex-direction: column;
     gap: 32px;
 }
-.pull-gstr-features{
+
+.pull-gstr-features {
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
-.pull-gstr-feature{
+
+.pull-gstr-feature {
     display: flex;
     gap: 32px;
     align-items: flex-start;
 }
-.pull-gstr-feature-content{
+
+.pull-gstr-feature-content {
     display: flex;
     flex-direction: column;
-    gap: 12px; ;
+    gap: 12px;
+    ;
 }
-.pull-gstr-link{
+
+.pull-gstr-link {
     padding: 12px 24px;
     color: var(--blue);
     text-decoration: none;
 }
+
 /* Powerful section */
-.powerful-section{
+.powerful-section {
     margin-top: 240px;
     width: 100%;
     display: flex;
     justify-content: center;
 }
-.powerful{
+
+.powerful {
     max-width: 1170px;
     margin-right: 24px;
     margin-left: 24px;
@@ -632,8 +667,494 @@ text-transform: uppercase;
     align-items: center;
     justify-content: center;
 }
-.powerful-content{
+
+.powerful-content {
     display: flex;
     flex-direction: column;
     gap: 40px;
+}
+
+/* Matching 60000 section */
+.matching-section {
+    margin-top: 96px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.matching {
+    max-width: 1170px;
+    margin-right: 24px;
+    margin-left: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.matching-slider {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.matching-slider-row {
+    opacity: 0.5;
+    border-left: 4px solid #9092A3;
+    padding-left: 60px;
+}
+
+.matching-slider-content {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    border-bottom: 1px solid #9092A3;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    justify-content: space-between;
+}
+
+.matching-image {
+    display: flex;
+    width: 45%;
+}
+
+.matching-image img {
+    max-width: 100%;
+}
+
+.selected-row {
+    opacity: 1;
+    border-left: 4px solid var(--blue);
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.selected-row-content {
+    border: none;
+    padding-bottom: 16px;
+}
+
+.matching-about {
+    padding-bottom: 14px;
+    border-bottom: 1px solid #9092A3;
+}
+
+/* Smart insightful Section */
+.smart-insightful-section {
+    margin-top: 248px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.smart-insightful {
+    max-width: 1170px;
+    margin-right: 24px;
+    margin-left: 24px;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    justify-content: center;
+}
+
+.smart-insightful-column1 {
+    padding: 72px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.smart-insightful-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.smart-insightful-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    gap: 12px;
+}
+
+.smart-insightful-card-text {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.smart-insightful-column2 {
+    padding: 104px 0px 80px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+/* Web mobile desktop Section */
+.web-desktop-section {
+    margin-top: 112px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* remaining Same as of powerful gst section */
+/* QMRP Section */
+.QMRP-Section {
+    margin-top: 144px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.QMRP {
+    max-width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px 24px 24px 24px;
+    padding: 96px 0px;
+}
+
+/* Bank Grade Section */
+.bank-grade-section {
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 136px;
+    justify-content: center;
+}
+
+.bank-grade {
+    margin: auto;
+    display: flex;
+    max-width: 1170px;
+    justify-content: center;
+    padding: 0px 24px;
+    align-items: flex-start;
+}
+
+.bank-grade-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.bank-grade-link {
+    padding-top: 16px;
+    text-decoration: none;
+}
+
+.bank-grade-cards {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1170px;
+    justify-content: center;
+    padding: 24px 0px;
+}
+
+.bank-grade-card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 26px;
+    height: 256px;
+    width: 390px;
+}
+
+.bank-grade-card img {
+    width: 48px;
+}
+
+/* Clients-section */
+.client-section {
+    margin-top: 248px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1170px;
+    padding-top: 0px 24px;
+}
+
+.client-says-sub {
+    display: flex;
+    padding-top: 24px;
+    align-items: center;
+    gap: 8px;
+    color: #000000;
+}
+
+.client-cards {
+    display: flex;
+    padding-top: 40px;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.client-card {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    width: 350px;
+    height: 280px;
+    padding-top: 32px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.client-card img {
+    width: 35px;
+    height: 28px;
+}
+
+.client-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.client-name {
+    color: #314259;
+    font-family: Gilroy;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.client-about {
+    color: #464D5E;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+/* press and awards Section */
+.press-section {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.press {
+    max-height: 1170px;
+    padding: 0px 24px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.press-top-part {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.press-top-part-icons {
+    display: flex;
+    gap: 16px;
+}
+
+.press-cards {
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 32px;
+}
+
+.press-card {
+    display: flex;
+    width: 261px;
+    height: 312px;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+    align-items: center;
+    text-align: center;
+}
+
+.press-year {
+    color: #314259;
+    text-align: center;
+    font-family: Gilroy;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.press-name {
+    color: var(--blue)
+}
+
+.press-card img {
+    max-width: 200px;
+}
+
+/* Maximize Credit section */
+.maximum-credit {
+    margin-top: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.max-credit {
+    max-width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 48px;
+    border-radius: 12px;
+    margin: 0px 24px;
+}
+
+.content-primary {
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
+    border-radius: 8px;
+    padding: 12px 24px 12px 24px;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Gilroy';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.content-secondary {
+    padding: 12px 24px 12px 24px;
+    text-decoration: none;
+    font-family: 'Gilroy';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    color: var(--blue);
+}
+
+.max-content-list {
+    padding-top: 48px;
+}
+
+/* Expore other section */
+.explore-section {
+    width: 100%;
+    display: flex;
+    margin-top: 160px;
+    justify-content: center;
+    align-items: center;
+}
+
+.explore {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 0px;
+    max-width: 1170px;
+    margin: 0px 24px;
+}
+
+.explore-heading {
+    max-width: 55%;
+}
+
+.explore-cards {
+    display: flex;
+    padding: 40px 0px;
+    gap: 33px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.explore-card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: flex-start;
+    color: #9092A3;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 0px 34px 0px rgba(70, 74, 85, 0.10);
+    gap: 20px;
+}
+.explore-card-heading{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 148px;
+    background: #314259;
+}
+.faq{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1170px;
+    padding: 128px 0px;
+    margin: 0px 24px;
+    flex-direction: column;
+    gap: 48px;
+}
+.footer-heading{
+    color: #FFF;
+}
+.faq-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+.faq-question{
+    color: #FFF;
+}
+.faq-text{
+    color: #ADB1BB;
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 992px) {
+    .hero-section{
+        margin-top: 40px;
+    }
+    .hero{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
 }
