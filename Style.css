@@ -116,6 +116,7 @@
     font-family: 'Gilroy';
     font-weight: 700;
     line-height: 36px;
+    padding: 0px 24px;
 }
 
 .navbar-links ul {
@@ -781,6 +782,9 @@
     padding: 24px;
     gap: 12px;
 }
+.smart-insightful-card img{
+    max-width: 90%;
+}
 
 .smart-insightful-card-text {
     width: 100%;
@@ -905,6 +909,7 @@
     gap: 40px;
     justify-content: center;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .client-card {
@@ -983,6 +988,7 @@
     align-items: center;
     justify-content: flex-start;
     gap: 32px;
+    flex-wrap: wrap;
 }
 
 .press-card {
@@ -1156,5 +1162,66 @@
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
+    }
+    .pull-gstr{
+        flex-wrap: wrap-reverse;
+    }
+    .QMRP{
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    .variety-categories{
+        align-self: center;
+    }
+    .smart-insightful{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 768px){
+    .gst-software{
+        flex-wrap: wrap-reverse;
+        gap: 48px;
+    }
+    .erp{
+        flex-wrap: wrap-reverse;
+    }
+    .variety-box-items{
+        flex-wrap: wrap;
+    }
+    .powerful{
+        flex-wrap: wrap-reverse;
+    }
+    .max-credit{
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .explore-cards{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .bank-grade{
+        flex-wrap: wrap-reverse;
+    }
+    .navbar {
+        display: none;
+      }
+    .smart-image img{
+        max-width: 90vw;
+    }
+    .variety-box{
+        max-width: 90vw;
+    }
+    .variety-categories{
+        flex-direction: column;
+    }
+    .pull-gstr-image img{
+        max-width: 90vw;
+    }
+    .hero-image img{
+        max-width: 90%;
     }
 }
