@@ -782,9 +782,6 @@
     padding: 24px;
     gap: 12px;
 }
-.smart-insightful-card img{
-    max-width: 90%;
-}
 
 .smart-insightful-card-text {
     width: 100%;
@@ -1223,5 +1220,14 @@
     }
     .hero-image img{
         max-width: 90%;
+    }
+    .smart-insightful-card img{
+    max-width: 90%;
+}
+    .bank-grade-image img{
+        max-width: 90%;
+    }
+    .matching{
+        flex-wrap: wrap;
     }
 }
